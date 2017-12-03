@@ -1,6 +1,8 @@
 # honduras_tse_pdf
-Creador de PDF De las actas del TSE en Amazon S3 o en su computadora local
-Fechtes the API.TSE.HN to retrieve the number of votes for Presidential race, only
+
+Creator of PDF files from "TSE" in the Amazon S3 bucked, storing all data in your local filesystem.
+
+The app techtes the API.TSE.HN to retrieve the number of votes for Presidential race, only
 
 
 # Description
