@@ -15,6 +15,6 @@ curl -I -o "#1.timestamp.txt" https://s3.amazonaws.com/uploadtrailhn/[00001-1812
 cd ..
 
 cd alcalde
-curl -o "#1.JPG" https://s3.amazonaws.com/uploadtrailhn/[00001-18128]405.JPG
-curl -I -o "#1.timestamp.txt" https://s3.amazonaws.com/uploadtrailhn/[00001-18128]405.JPG
+curl -o "#1.JPG" https://s3.amazonaws.com/uploadtrailhn/[00001-18128]606.JPG
+curl -I -o "#1.timestamp.txt" https://s3.amazonaws.com/uploadtrailhn/[00001-18128]505.JPG
 
