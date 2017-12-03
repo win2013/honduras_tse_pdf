@@ -26,7 +26,7 @@ Install PILLOW and FPDF in your machine with Python 2.7
 
 ## Configuration after git clone is perfomed
 ```
-cd PILLOW 
+cd Pillow 
 python setup.py install
 cd ..
 cd fpdf
@@ -35,8 +35,9 @@ cd ..
 ```
 
 ## Install all TSE Images and  Resources:
-```-
-run download.sh 
+```
+chnod +x  download.sh 
+./download.sh
 ```
 
 Make sure all JPEGs install with metadata from S3 bucket, the files are in JPEG format from API.TSE.HN The created file structure would be:
