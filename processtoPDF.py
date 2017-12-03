@@ -28,7 +28,7 @@ if (arg_len  >    1):
     print "START of Index" + str( start_id );
     end_id = int(sys.argv[2]);
     if (end_id<0):
-        end_id = 0
+        end_id = 1000
     print "END of Index "+ str( end_id ) ;
     if arg_len > 3:
         database_name = sys.argv[3]
@@ -140,7 +140,7 @@ for m in os.listdir(sources[0]):
 
 #print mer_ids;
 
-for mer_id_jpg in mer_ids_jpgs[int(start_id):]:
+for mer_id_jpg in mer_ids_jpgs[int(start_id):end_id]:
   image_files = []
   timestamps  = []
   mer_id = os.path.splitext(basename(mer_id_jpg))
