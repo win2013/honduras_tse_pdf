@@ -36,8 +36,8 @@ cd ..
 
 ## Install all TSE Images and  Resources:
 ```
-chnod +x  download.sh 
-./download.sh
+chnod +x  downloads.sh 
+./downloads.sh
 ```
 
 Make sure all JPEGs install with metadata from S3 bucket, the files are in JPEG format from API.TSE.HN The created file structure would be:
