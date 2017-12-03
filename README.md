@@ -23,26 +23,28 @@ Install PILLOW and FPDF in your machine with Python 2.7
 * git clone https://github.com/Setasign/FPDF.git
 
 ## Configuration after git clone is perfomed
-----
+```
 cd PILLOW 
 python setup.py install
 cd ..
 cd fpdf
 python setup.py install
 cd ..
------
+```
 
 ## Install all TSE Images and  Resources:
-----
+```-
 run download.sh 
----
+```
 
 Make sure all JPEGs install with metadata from S3 bucket, the files are in JPEG format from API.TSE.HN The created file structure would be:
 
+```
 alcaldes/*
 diputados/*
 presidente/*
 pdfs/*
+```
 
 All the "ACTAS" will be pulled from alcaldes/* diputados/* and presidente/* and merged into pdfs, the metadata from the PDF created
 comes from the timestamp is arriving from AWS from the header data.
@@ -52,10 +54,10 @@ And run the follwing in several machines.
 ...
 python processtoPDF.py 10000 11000 pdfs/data_1000to11000.csv 
 python processtoPDF.py 11001 12000 pdfs/data_1100to12000.csv 
----
+```
 
 and to create a table with the JPEG image sizes, and all teh votes for each prescint.
----
+```
 python findresolutions.py 1 18180  > data_mining.csv
----
+```
  
