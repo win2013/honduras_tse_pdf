@@ -53,7 +53,7 @@ comes from the timestamp is arriving from AWS from the header data.
 
 
 And run the follwing in several machines. 
-...
+```
 python processtoPDF.py 10000 11000 pdfs/data_1000to11000.csv 
 python processtoPDF.py 11001 12000 pdfs/data_1100to12000.csv 
 ```
@@ -63,3 +63,6 @@ and to create a table with the JPEG image sizes, and all teh votes for each pres
 python findresolutions.py 1 18180  > data_mining.csv
 ```
  
+### Dropbox with all PDF files
+
+* [Dropbox] ("https://www.dropbox.com/sh/cbqdmiu72er8c6a/AAAqmEAL4AZUrXcQziM7GLjja?dl=0") -- Repository with all PDF Files
