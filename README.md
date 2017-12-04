@@ -59,7 +59,13 @@ python processtoPDF.py 10000 11000 pdfs/data_1000to11000.csv
 python processtoPDF.py 11001 12000 pdfs/data_1100to12000.csv 
 ```
 
-and to create a table with the JPEG image sizes, and all teh votes for each prescint.
+### Finding Image Resoultions and Votind Data
+
+You can  create a table with the JPEG image sizes, and all the votes for each prescint in CSV format.
+This is a quick and dirty way of doing that by redirecting output to the CSV file, but we can use CSV module on python.
+additionally, the app extracts the resolution of all images and inersts them as P_W and P_H: President Width and HEIGHT
+and so on. 
+
 ```
 python findresolutions.py 1 18180  > data_mining.csv
 ```
