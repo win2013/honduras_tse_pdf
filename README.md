@@ -22,14 +22,14 @@ Run the following programs in multiple nodes in your cloud
 
 Install PILLOW and FPDF in your machine with Python 2.7
 * git clone https://github.com/python-pillow/Pillow.git
-* git clone https://github.com/Setasign/FPDF.git
+* git clone https://github.com/reingart/pyfpdf
 
 ## Configuration after git clone is perfomed
 ```
 cd Pillow 
 python setup.py install
 cd ..
-cd fpdf
+cd pfpdf
 python setup.py install
 cd ..
 ```
@@ -46,6 +46,7 @@ Make sure all JPEGs install with metadata from S3 bucket, the files are in JPEG 
 alcaldes/*
 diputados/*
 presidente/*
+escrutinioesp/*
 pdfs/*
 ```
 
@@ -69,7 +70,16 @@ and so on.
 ```
 python findresolutions.py 1 18180  > data_mining.csv
 ```
- 
+
+### find_by_data.py
+
+This program finds all "ACTAS" with a timestamp by date and sorts them out in a searchable file. Also counts all votes added per date.
+And uses the data_ming.csv talbe created by findresolutions.py
+
+```
+python find_By_date.py directory data_mining.csv  
+```
+
 ### Dropbox with all PDF files
 
 * [Dropbox] ("https://www.dropbox.com/sh/cbqdmiu72er8c6a/AAAqmEAL4AZUrXcQziM7GLjja?dl=0") -- Repository with all PDF Files
